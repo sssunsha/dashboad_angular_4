@@ -1,4 +1,4 @@
-$topnav-background-color: #222;
+$topnav-background-color: #74787c;
 .sidebar {
     border-radius: 0;
     position: fixed;
@@ -25,7 +25,7 @@ $topnav-background-color: #222;
             background: $topnav-background-color;
             border: 0;
             border-radius: 0;
-            color: #999;
+            color: #dec674;
             text-decoration: none;
             .fa {
                 margin-right: 10px;
@@ -41,8 +41,7 @@ $topnav-background-color: #222;
         }
         .header-fields {
             padding-top: 10px;
-        
-            > .list-group-item:first-child {
+            >.list-group-item:first-child {
                 border-top: 1px solid rgba(255, 255, 255, 0.2);
             }
         }
@@ -100,6 +99,7 @@ $topnav-background-color: #222;
         }
     }
 }
+
 .nested-menu {
     .list-group-item {
         cursor: pointer;
@@ -126,12 +126,14 @@ $topnav-background-color: #222;
         }
     }
 }
+
 @media screen and (max-width: 992px) {
     .sidebar {
         top: 54px;
         left: 0px;
     }
 }
+
 @media (min-width: 992px) {
     .header-fields {
         display: none;
