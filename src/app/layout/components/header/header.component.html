@@ -75,29 +75,29 @@
                     <i class="fa fa-language"></i> {{ 'Language' | translate }} <b class="caret"></b>
                 </a>
                 <div class="dropdown-menu-right" ngbDropdownMenu>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('en')">
+                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('en')" *ngIf="true">
                         {{ 'English' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('fr')">
+                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('fr')" *ngIf="false">
                         {{ 'French' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('ur')">
+                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('ur')" *ngIf="false">
                         {{ 'Urdu' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('es')">
+                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('es')" *ngIf="false">
                         {{ 'Spanish' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('it')">
+                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('it')" *ngIf="false">
                         {{ 'Italian' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('fa')">
+                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('fa')" *ngIf="false">
                         {{ 'Farsi' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('de')">
+                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('de')" *ngIf="false">
                         {{ 'German' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('zh-CHS')">
-                        {{ 'Simplified Chinese' | translate }}
+                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('zh-CHS')" *ngIf="true">
+                        {{ 'Chinese' | translate }}
                     </a>
                 </div>
             </li>
