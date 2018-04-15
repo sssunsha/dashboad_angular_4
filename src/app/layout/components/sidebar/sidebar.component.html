@@ -9,7 +9,10 @@
         <a [routerLink]="['/tables']" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-table"></i>&nbsp;{{ 'Tables' | translate }}
         </a>
-        <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <a [routerLink]="['/reports']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'Reports' | translate }}
+        </a>
+        <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']" class="list-group-item" *ngIf="false">
             <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'Forms' | translate }}
         </a>
         <a [routerLink]="['/meetings']" [routerLinkActive]="['router-link-active']" class="list-group-item">

@@ -19,6 +19,7 @@ const routes: Routes = [
             { path: 'funds', loadChildren: './funds/funds.module#FundsModule' },
             { path: 'notifications', loadChildren: './notifications/notifications.module#NotificationsModule' },
             { path: 'meetings', loadChildren: './meetings/meetings.module#MeetingsModule' },
+            { path: 'reports', loadChildren: './reports/reports.module#ReportsModule' },
         ]
     }
 ];
