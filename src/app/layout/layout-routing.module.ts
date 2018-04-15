@@ -16,7 +16,8 @@ const routes: Routes = [
             { path: 'grid', loadChildren: './grid/grid.module#GridModule' },
             { path: 'components', loadChildren: './bs-component/bs-component.module#BsComponentModule' },
             { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' },
-            { path: 'funds', loadChildren: './funds/funds.module#FundsModule' }
+            { path: 'funds', loadChildren: './funds/funds.module#FundsModule' },
+            { path: 'notifications', loadChildren: './notifications/notifications.module#NotificationsModule' }
         ]
     }
 ];
