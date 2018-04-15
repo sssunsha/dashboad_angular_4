@@ -20,6 +20,7 @@ const routes: Routes = [
             { path: 'notifications', loadChildren: './notifications/notifications.module#NotificationsModule' },
             { path: 'meetings', loadChildren: './meetings/meetings.module#MeetingsModule' },
             { path: 'reports', loadChildren: './reports/reports.module#ReportsModule' },
+            { path: 'statistics', loadChildren: './statistics/statistics.module#StatisticsModule' },
         ]
     }
 ];
