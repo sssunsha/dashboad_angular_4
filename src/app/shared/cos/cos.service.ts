@@ -1,0 +1,1 @@
+import * as COS from 'cos-nodejs-sdk-v5';
