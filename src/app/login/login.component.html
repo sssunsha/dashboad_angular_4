@@ -6,11 +6,11 @@
             <form role="form">
                 <div class="form-content">
                     <div class="form-group">
-                        <input type="text" value="secretId" class="form-control input-underline input-lg" id="secretId" placeholder="secret id">
+                        <input type="text" [(ngModel)]="secretId" class="form-control input-underline input-lg" name="secretId" placeholder="secret id">
                     </div>
 
                     <div class="form-group">
-                        <input type="text" value="secretKey" class="form-control input-underline input-lg" id="secretKey" placeholder="secret key">
+                        <input type="text" [(ngModel)]="secretKey" class="form-control input-underline input-lg" name="secretKey" placeholder="secret key">
                     </div>
                 </div>
 				<a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()"> Log in </a> &nbsp;
