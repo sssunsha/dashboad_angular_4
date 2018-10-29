@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HttpParams, HttpClient } from '@angular/common/http';
 import { routerTransition } from '../router.animations';
 import { BUCKET, DAILY_FOLDER, REGION } from '../shared/configuration/configuration';
-// import * as COS from 'cos-nodejs-sdk-v5';
+import * as COS from 'cos-js-sdk-v5';
+
 
 @Component({
     selector: 'app-login',
@@ -14,7 +16,8 @@ export class LoginComponent implements OnInit {
 	secretId: string;
 	secretKey: string;
 	cos;
-	constructor(public router: Router) {}
+	constructor(public router: Router,
+				private http: HttpClient) {}
 
     ngOnInit() {
 	}
@@ -25,16 +28,21 @@ export class LoginComponent implements OnInit {
 	}
 	
 	checkLogin() {
-		// this.cos = new COS({
-		// 	SecretId: this.secretId,
-		// 	SecretKey: this.secretKey,
-		// });
-		// // check get COS bucket
-		// this.cos.getBucketCors({
-		// 	Bucket: BUCKET,
-		// 	Region: REGION,
-		// }, (err, data) => {
-		// 	console.log(err || data);
+		// const that = this;
+		// const params = new HttpParams()
+		// 	.set('bucket', BUCKET)
+		// 	.set('region', REGION);
+		// var cos = new COS({
+		// 	getAuthorization: function (options, callback) {
+		// 		that.http.get('http://service.cos.myqcloud.com/server/sts.php', {params}).subscribe(data => {
+		// 			callback({
+		// 				TmpSecretId: data.TmpSecretId,
+		// 				TmpSecretKey: data.TmpSecretKey,
+		// 				XCosSecurityToken: data.XCosSecurityToken,
+		// 				ExpiredTime: data.ExpiredTime,
+		// 			});
+		// 		})
+		// 	}
 		// });
 	}
 }
