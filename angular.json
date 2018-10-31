@@ -21,14 +21,14 @@
               "src/favicon.ico"
             ],
             "styles": [
-			  "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
+			  "src/assets/style/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/styles/app.scss"
             ],
             "scripts": [
-				"https://code.jquery.com/jquery-3.3.1.slim.min.js",
-				"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
-				"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js",
+				"src/assets/script/jquery-3.3.1.slim.min.js",
+				"src/assets/script/popper.min.js",
+				"src/assets/script/bootstrap.min.js",
               	"node_modules/chart.js/dist/Chart.js"
             ]
           },
@@ -77,13 +77,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
-				"https://code.jquery.com/jquery-3.3.1.slim.min.js",
-				"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
-				"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js",
+				"src/assets/script/jquery-3.3.1.slim.min.js",
+				"src/assets/script/popper.min.js",
+				"src/assets/script/bootstrap.min.js",
               	"node_modules/chart.js/dist/Chart.js"
             ],
             "styles": [
-			  "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
+			  "src/assets/style/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/styles/app.scss"
             ],
