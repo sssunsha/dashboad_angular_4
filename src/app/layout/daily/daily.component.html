@@ -1,4 +1,12 @@
-<div [@routerTransition]>
-    <app-page-header [heading]="'daily'" [icon]="'fa-edit'"></app-page-header>
-
-</div>
+<ngb-tabset>
+	<ngb-tab title='Daily record'>
+		<ng-template ngbTabContent>
+			<h3>Daily Record</h3>
+		</ng-template>
+	</ngb-tab>
+	<ngb-tab title='Backlog'>
+		<ng-template ngbTabContent>
+			<h3>Backlog</h3>
+		</ng-template>
+	</ngb-tab>
+</ngb-tabset>
