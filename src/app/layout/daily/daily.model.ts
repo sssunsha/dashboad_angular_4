@@ -9,7 +9,7 @@ export enum ETaskType {
 export enum ETaskLife {
 	HALF_HOUR = '0.5h',
 	ONE_HOUR = '1h',
-	TWO_HOURs = '2h',
+	TWO_HOURS = '2h',
 	THREE_HOURS = '3h',
 	FOUR_HOURS = '4h',
 	HALF_DAY = '4h',
@@ -21,7 +21,7 @@ export enum ETaskLife {
 
 export enum ETaskImportantLevel {
 	 CRITICAL = 'Critical',
-	 MEDIUM = 'medium',
+	 MEDIUM = 'Medium',
 	 MINOR = 'Minor',
 }
 
@@ -42,7 +42,7 @@ export enum ETaskStatus {
 	INPROGRESS = 'in_progress',
 	PARTLY_DONE = 'partly_done',
 	DONE = 'done',
-	NOT_DO = 'not_do', 
+	WONT_DO = 'won\'t_do', 
 }
 
 export class Task {
@@ -50,17 +50,19 @@ export class Task {
 	type: ETaskType;
 	importance: ETaskImportantLevel;
 	urgency: ETaskUrgentLevel;
+	place: ETaskPlace;
 	content: string;
 	output: string;
-	result: ETaskStatus;
+	status: ETaskStatus;
 	constructor({
 		name,
 		type,
 		importance,
 		urgency,
+		place,
 		content,
 		output,
-		result,
+		status,
 	}: Partial<Task>) {
 		this.name = name;
 		this.type = type;
@@ -68,7 +70,8 @@ export class Task {
 		this.urgency = urgency;
 		this.content = content;
 		this.output = output;
-		this.result = result;
+		this.status = status;
+		this.place = place;
 	}
 }
 

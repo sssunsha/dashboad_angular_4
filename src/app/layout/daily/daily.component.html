@@ -6,10 +6,11 @@
 				<thead class="thead-dark">
 					<tr>
 						<th scope="col">#</th>
-						<th scope="col">Type</th>
 						<th scope="col">Name</th>
+						<th scope="col">Type</th>
 						<th scope="col">Importance</th>
 						<th scope="col">Urgency</th>
+						<th scope="col">Place</th>
 						<th scope="col">Content</th>
 						<th scope="col">Output</th>
 						<th scope="col">Result</th>
@@ -19,16 +20,39 @@
 					<tr>
 						<th scope="row">{{i+1}}</th>
 						<td>
+							<input matInput [(ngModel)]="task.name">
+						</td>
+						<td>
 							<mat-select [(ngModel)]="task.type">
 								<mat-option *ngFor="let option of taskTypeOptions" [value]="option.code">{{option.label}}</mat-option>
 							</mat-select>
 						</td>
-						<td>2</td>
-						<td>3</td>
-						<td>4</td>
-						<td>5</td>
-						<td>6</td>
-						<td>7</td>
+						<td>
+							<mat-select [(ngModel)]="task.importance">
+								<mat-option *ngFor="let option of taskImportanceOptions" [value]="option.code">{{option.label}}</mat-option>
+							</mat-select>
+						</td>
+						<td>
+							<mat-select [(ngModel)]="task.urgency">
+								<mat-option *ngFor="let option of taskUrgencyOptions" [value]="option.code">{{option.label}}</mat-option>
+							</mat-select>
+						</td>
+						<td>
+							<mat-select [(ngModel)]="task.place">
+								<mat-option *ngFor="let option of taskPlaceOptions" [value]="option.code">{{option.label}}</mat-option>
+							</mat-select>
+						</td>
+						<td>
+							<input [(ngModel)]="task.content">
+						</td>
+						<td>
+							<input [(ngModel)]="task.output">
+						</td>
+						<td>
+							<mat-select [(ngModel)]="task.status">
+								<mat-option *ngFor="let option of taskStatusOptions" [value]="option.code">{{option.label}}</mat-option>
+							</mat-select>
+					</td>
 					</tr>
 				</tbody>
 			</table>
