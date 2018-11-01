@@ -3,6 +3,7 @@ export enum ETaskType {
 	WORKING = 'Working',
 	LEARNING = 'Learning',
 	HOBBY = 'Hobby',
+	OTHERS = 'Others',
 }
 
 export enum ETaskLife {
@@ -34,4 +35,44 @@ export enum ETaskPlace {
 	OFFICE = 'office',
 	WAY_ON_HOME_COMPANY = 'way on home/company',
 	HOME = 'home',
+}
+
+export enum ETaskStatus {
+	OPEN = 'open',
+	INPROGRESS = 'in_progress',
+	PARTLY_DONE = 'partly_done',
+	DONE = 'done',
+	NOT_DO = 'not_do', 
+}
+
+export class Task {
+	name: string;
+	type: ETaskType;
+	importance: ETaskImportantLevel;
+	urgency: ETaskUrgentLevel;
+	content: string;
+	output: string;
+	result: ETaskStatus;
+	constructor({
+		name,
+		type,
+		importance,
+		urgency,
+		content,
+		output,
+		result,
+	}: Partial<Task>) {
+		this.name = name;
+		this.type = type;
+		this.importance = importance;
+		this.urgency = urgency;
+		this.content = content;
+		this.output = output;
+		this.result = result;
+	}
+}
+
+export interface TaskSelectOption {
+	label: string;
+	code: string;
 }

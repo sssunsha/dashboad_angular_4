@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
+import { Task } from './daily.model';
+import { mockTaskList } from './daily.mock';
+import { TaskTypeOptions } from './daily.config';
+
 
 @Component({
     selector: 'app-daily',
@@ -8,7 +12,13 @@ import { routerTransition } from '../../router.animations';
     animations: [routerTransition()]
 })
 export class DailyComponent implements OnInit {
+
+	tasks:Array<Task>;
+	taskTypeOptions = TaskTypeOptions;
+
     constructor() {}
 
-    ngOnInit() {}
+    ngOnInit() {
+		this.tasks = mockTaskList;
+	}
 }
