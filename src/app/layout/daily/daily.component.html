@@ -1,25 +1,29 @@
 <ngb-tabset>
 	<ngb-tab title='Daily record'>
 		<ng-template ngbTabContent>
-			<h3>Daily Record</h3>
-			<table class="table">
+			<h5>Daily Record</h5>
+			<table class="table table-striped table-bordered table-sm">
 				<thead class="thead-dark">
 					<tr>
-						<th scope="col">#</th>
+						<th scope="col" class="me-colum">Time Cost</th>
 						<th scope="col">Name</th>
-						<th scope="col">Type</th>
-						<th scope="col">Importance</th>
-						<th scope="col">Urgency</th>
-						<th scope="col">Place</th>
+						<th scope="col" class="me-colum">Type</th>
+						<th scope="col" class="sm-colum">Importance</th>
+						<th scope="col" class="sm-colum">Urgency</th>
+						<th scope="col" class="bi-colum">Place</th>
 						<th scope="col">Content</th>
 						<th scope="col">Output</th>
 						<th scope="col">Result</th>
 					</tr>
 				</thead>
-				<tbody *ngFor="let task of tasks; let i = index">
+				<tbody *ngFor="let task of tasks">
 					<tr>
-						<th scope="row">{{i+1}}</th>
-						<td>
+						<th scope="row">
+							<mat-select [(ngModel)]="task.timeCost">
+								<mat-option *ngFor="let option of taskTimeCostOptions" [value]="option.code">{{option.label}}</mat-option>
+							</mat-select>
+						</th>
+						<td class="td-input">
 							<input matInput [(ngModel)]="task.name">
 						</td>
 						<td>
@@ -42,10 +46,10 @@
 								<mat-option *ngFor="let option of taskPlaceOptions" [value]="option.code">{{option.label}}</mat-option>
 							</mat-select>
 						</td>
-						<td>
+						<td class="td-input">
 							<input [(ngModel)]="task.content">
 						</td>
-						<td>
+						<td class="td-input">
 							<input [(ngModel)]="task.output">
 						</td>
 						<td>

@@ -50,6 +50,7 @@ export class Task {
 	type: ETaskType;
 	importance: ETaskImportantLevel;
 	urgency: ETaskUrgentLevel;
+	timeCost: ETaskLife;
 	place: ETaskPlace;
 	content: string;
 	output: string;
@@ -59,6 +60,7 @@ export class Task {
 		type,
 		importance,
 		urgency,
+		timeCost,
 		place,
 		content,
 		output,
@@ -72,6 +74,7 @@ export class Task {
 		this.output = output;
 		this.status = status;
 		this.place = place;
+		this.timeCost = timeCost;
 	}
 }
 

@@ -34,14 +34,14 @@ export const TaskTimeCostOptions: Array<TaskSelectOption> = [
 
 export const TaskPlaceOptions: Array<TaskSelectOption> = [
 	{label: ETaskPlace.OFFICE, code: ETaskPlace.OFFICE},
-	{label: ETaskPlace.WAY_ON_HOME_COMPANY, code: ETaskPlace.WAY_ON_HOME_COMPANY},
+	{label: 'on_the_way', code: ETaskPlace.WAY_ON_HOME_COMPANY},
 	{label: ETaskPlace.HOME, code: ETaskPlace.HOME},
 ];
 
 export const TaskStatusOptions: Array<TaskSelectOption> = [
-	{label: ETaskStatus.OPEN, code: ETaskStatus.OPEN},
-	{label: ETaskStatus.INPROGRESS, code: ETaskStatus.INPROGRESS},
-	{label: ETaskStatus.PARTLY_DONE, code: ETaskStatus.PARTLY_DONE},
-	{label: ETaskStatus.DONE, code: ETaskStatus.DONE},
-	{label: ETaskStatus.WONT_DO, code: ETaskStatus.WONT_DO},
+	{label: 'open', code: ETaskStatus.OPEN},
+	{label: 'in progress', code: ETaskStatus.INPROGRESS},
+	{label: 'partly done', code: ETaskStatus.PARTLY_DONE},
+	{label: 'done', code: ETaskStatus.DONE},
+	{label: 'won\'t do' , code: ETaskStatus.WONT_DO},
 ];
