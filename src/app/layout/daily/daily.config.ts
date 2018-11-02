@@ -24,7 +24,6 @@ export const TaskTimeCostOptions: Array<TaskSelectOption> = [
 	{label: ETaskLife.ONE_HOUR, code: ETaskLife.ONE_HOUR},
 	{label: ETaskLife.TWO_HOURS, code: ETaskLife.TWO_HOURS},
 	{label: ETaskLife.THREE_HOURS, code: ETaskLife.THREE_HOURS},
-	{label: ETaskLife.FOUR_HOURS, code: ETaskLife.FOUR_HOURS},
 	{label: ETaskLife.HALF_DAY, code: ETaskLife.HALF_DAY},
 	{label: ETaskLife.ONE_DAY, code: ETaskLife.ONE_DAY},
 	{label: ETaskLife.ONE_HALF_DAYS, code: ETaskLife.ONE_HALF_DAYS},

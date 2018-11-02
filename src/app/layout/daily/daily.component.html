@@ -2,12 +2,12 @@
 	<ngb-tab title='Daily record'>
 		<ng-template ngbTabContent>
 			<h5>Daily Record</h5>
-			<table class="table table-striped table-bordered table-sm">
+			<table class="table table-striped table-bordered">
 				<thead class="thead-dark">
 					<tr>
 						<th scope="col" class="me-colum">Time Cost</th>
 						<th scope="col">Name</th>
-						<th scope="col" class="me-colum">Type</th>
+						<th scope="col" class="bi-colum">Type</th>
 						<th scope="col" class="sm-colum">Importance</th>
 						<th scope="col" class="sm-colum">Urgency</th>
 						<th scope="col" class="bi-colum">Place</th>
@@ -24,7 +24,7 @@
 							</mat-select>
 						</th>
 						<td class="td-input">
-							<input matInput [(ngModel)]="task.name">
+							<textarea row="3" [(ngModel)]="task.name"></textarea>
 						</td>
 						<td>
 							<mat-select [(ngModel)]="task.type">
@@ -47,10 +47,10 @@
 							</mat-select>
 						</td>
 						<td class="td-input">
-							<input [(ngModel)]="task.content">
+							<textarea [(ngModel)]="task.content"></textarea>
 						</td>
 						<td class="td-input">
-							<input [(ngModel)]="task.output">
+							<textarea [(ngModel)]="task.output"></textarea>
 						</td>
 						<td>
 							<mat-select [(ngModel)]="task.status">

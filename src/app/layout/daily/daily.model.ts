@@ -11,7 +11,6 @@ export enum ETaskLife {
 	ONE_HOUR = '1h',
 	TWO_HOURS = '2h',
 	THREE_HOURS = '3h',
-	FOUR_HOURS = '4h',
 	HALF_DAY = '4h',
 	ONE_DAY = '1d',
 	ONE_HALF_DAYS = '1.5d',
