@@ -1,5 +1,5 @@
 # Feature list
-## 1. 日常jira监控 ---> charts --> current
+## 1. 日常jira监控 ---> charts --> current --> 外婆日常使用
 ## 2. sprint 数据统计 ---> Tables --> statistics
 ## 3. sprint 会议记录以及后续报告自动生成 --> Bootstrap Element --> meetings
 ## 4. 基金数据统计 --> funds

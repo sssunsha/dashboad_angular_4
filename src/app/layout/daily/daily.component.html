@@ -2,6 +2,8 @@
 	<ngb-tab title='Daily record'>
 		<ng-template ngbTabContent>
 			<h5>Daily Record</h5>
+			<mat-icon aria-label="Example icon-button with a heart icon" (click)="handleEditModeSwitch()">favorite</mat-icon>
+			<mat-icon (click)="handleAddNewTask()">favorite</mat-icon>
 			<table class="table table-striped table-bordered">
 				<thead class="thead-dark">
 					<tr>

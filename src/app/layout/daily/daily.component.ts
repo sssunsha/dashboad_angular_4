@@ -21,9 +21,20 @@ export class DailyComponent implements OnInit {
 	taskPlaceOptions = TaskPlaceOptions;
 	taskStatusOptions = TaskStatusOptions;
 
+	isEditMode: boolean;
+
     constructor() {}
 
     ngOnInit() {
+		this.isEditMode = false;
 		this.tasks = mockTaskList;
+	}
+
+	handleEditModeSwitch(): void {
+
+	}
+
+	handleAddNewTask(): void {
+
 	}
 }

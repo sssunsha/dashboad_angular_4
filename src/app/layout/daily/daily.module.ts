@@ -6,7 +6,7 @@ import { DailyComponent } from './daily.component';
 import { PageHeaderModule } from '../../shared';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatSelectModule} from '@angular/material';
+import {MatSelectModule, MatIconModule} from '@angular/material';
 
 @NgModule({
     imports: [
@@ -16,6 +16,7 @@ import {MatSelectModule} from '@angular/material';
 			DailyRoutingModule,
 			PageHeaderModule,
 			MatSelectModule,
+			MatIconModule,
 			NgbModule.forRoot()],
     declarations: [DailyComponent]
 })

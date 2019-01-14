@@ -29,6 +29,7 @@
 				"src/assets/script/jquery-3.3.1.slim.min.js",
 				"src/assets/script/popper.min.js",
 				"src/assets/script/bootstrap.min.js",
+				"src/assets/script/angular-material-icons.min.js",
               	"node_modules/chart.js/dist/Chart.js"
             ]
           },
@@ -80,6 +81,7 @@
 				"src/assets/script/jquery-3.3.1.slim.min.js",
 				"src/assets/script/popper.min.js",
 				"src/assets/script/bootstrap.min.js",
+				"src/assets/script/angular-material-icons.min.js",
               	"node_modules/chart.js/dist/Chart.js"
             ],
             "styles": [

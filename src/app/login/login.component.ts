@@ -28,21 +28,5 @@ export class LoginComponent implements OnInit {
 	}
 	
 	checkLogin() {
-		// const that = this;
-		// const params = new HttpParams()
-		// 	.set('bucket', BUCKET)
-		// 	.set('region', REGION);
-		// var cos = new COS({
-		// 	getAuthorization: function (options, callback) {
-		// 		that.http.get('http://service.cos.myqcloud.com/server/sts.php', {params}).subscribe(data => {
-		// 			callback({
-		// 				TmpSecretId: data.TmpSecretId,
-		// 				TmpSecretKey: data.TmpSecretKey,
-		// 				XCosSecurityToken: data.XCosSecurityToken,
-		// 				ExpiredTime: data.ExpiredTime,
-		// 			});
-		// 		})
-		// 	}
-		// });
 	}
 }
