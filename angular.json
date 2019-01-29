@@ -23,14 +23,14 @@
             "styles": [
 			  "src/assets/style/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css",
-              "src/styles/app.scss"
+			  "src/styles/app.scss"
             ],
             "scripts": [
 				"src/assets/script/jquery-3.3.1.slim.min.js",
 				"src/assets/script/popper.min.js",
 				"src/assets/script/bootstrap.min.js",
 				"src/assets/script/angular-material-icons.min.js",
-              	"node_modules/chart.js/dist/Chart.js"
+				"node_modules/chart.js/dist/Chart.js"
             ]
           },
           "configurations": {

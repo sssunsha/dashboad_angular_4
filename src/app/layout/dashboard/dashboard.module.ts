@@ -11,6 +11,7 @@ import {
 } from './components';
 import { StatModule } from '../../shared';
 import { PhoneComponent } from './components/phone/phone.component';
+import { MusicComponent } from './components/music/music.component';
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import { PhoneComponent } from './components/phone/phone.component';
         TimelineComponent,
         NotificationComponent,
         ChatComponent,
-        PhoneComponent
+        PhoneComponent,
+        MusicComponent
     ]
 })
 export class DashboardModule {}
