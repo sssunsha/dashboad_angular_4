@@ -12,6 +12,7 @@ import {
 import { StatModule } from '../../shared';
 import { PhoneComponent } from './components/phone/phone.component';
 import { MusicComponent } from './components/music/music.component';
+import { VideoComponent } from './components/video/video.component';
 
 @NgModule({
     imports: [
@@ -20,7 +21,7 @@ import { MusicComponent } from './components/music/music.component';
         NgbCarouselModule.forRoot(),
         NgbAlertModule.forRoot(),
         DashboardRoutingModule,
-        StatModule
+		StatModule
     ],
     declarations: [
         DashboardComponent,
@@ -28,7 +29,8 @@ import { MusicComponent } from './components/music/music.component';
         NotificationComponent,
         ChatComponent,
         PhoneComponent,
-        MusicComponent
+        MusicComponent,
+        VideoComponent
     ]
 })
 export class DashboardModule {}

@@ -23,7 +23,9 @@
             "styles": [
 			  "src/assets/style/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css",
-			  "src/styles/app.scss"
+			  "src/styles/app.scss",
+			  "node_modules/plyr/dist/plyr.css",
+			  "src/assets/config/video/dashboard-youku-video-style.css"
             ],
             "scripts": [
 				"src/assets/script/jquery-3.3.1.slim.min.js",
@@ -87,7 +89,9 @@
             "styles": [
 			  "src/assets/style/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css",
-              "src/styles/app.scss"
+			  "src/styles/app.scss",
+			  "node_modules/plyr/dist/plyr.css",
+			  "src/assets/config/video/dashboard-youku-video-style.css"
             ],
             "assets": [
               "src/assets",

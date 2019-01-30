@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser'; 
 declare var skPlayer:any;
 
 @Component({
@@ -8,9 +7,7 @@ declare var skPlayer:any;
   styleUrls: ['./music.component.scss']
 })
 export class MusicComponent implements OnInit {
-
-	iframe: SafeResourceUrl;
-	constructor(private sanitizer: DomSanitizer) { }
+	constructor() { }
 
   ngOnInit() {
 	var player = new skPlayer({
