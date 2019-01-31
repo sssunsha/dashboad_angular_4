@@ -1,8 +1,9 @@
 .container {
-	min-height: 500px;
-	background-color: darkgray;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 0;
 	iframe {
-		height: 480px;
+		height: -webkit-fill-available;
 		width: 100%;
 	}
 }

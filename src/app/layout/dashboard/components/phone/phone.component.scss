@@ -1,9 +1,17 @@
-.container {
-	background-color: #FDF5E6;
-}
 .card-class {
 	width: 6rem;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0);
 }
 .name-class {
 	margin-top: .75rem;
+}
+
+img {
+	border-radius: 50%;
+	line-height: 24px;
+}
+
+.container {
+	padding-top: 15px;
 }
